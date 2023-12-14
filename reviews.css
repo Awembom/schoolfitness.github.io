@@ -1,0 +1,272 @@
+
+:root {
+    --main-color: rgb(214, 16, 214);
+    --black: #000;
+    --light-color: grey;
+    --transition: all 0.3s linear;
+}
+
+.box {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-size: cover !important;
+    background-position: center !important;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.box h2 {
+    font-size: 2.5rem !important;
+    color: var(--black);
+    
+}
+
+.box h2 span {
+    color: var(--main-color);
+}
+
+.box p {
+    font-size: 1.5rem;
+    line-height: 5.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+
+.box .btn {
+    margin-top: 5rem;
+}
+
+/* SEction of our brilliant performance */
+
+.classic p {
+    margin-bottom: 1.5rem;
+    max-width: 40em;
+  }
+  
+  h1,
+  .classic h2,
+  h3,
+  h4,
+  h5 {
+    margin: 0;
+    margin-bottom: 1.38rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: capitalize;
+    letter-spacing: 1.5rem;
+  }
+  
+   h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+  }
+/*   
+   h2 {
+    font-size: 2.441rem;
+  } */
+  
+  h3 {
+    font-size: 1.953rem;
+  }
+  
+  h4 {
+    font-size: 1.563rem;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+  }
+  
+  small,
+  .text-small {
+    font-size: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  /*
+  =============== 
+  Numbers 
+  ===============
+  */
+  
+  section {
+    padding: 5rem 0;
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    section {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  article {
+    background: var(--light-color);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border-bottom: 4px solid transparent;
+  }
+  
+  article span {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  
+  article p {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+  }
+  
+  article:nth-of-type(1) {
+    border-bottom-color: #f59e0b;
+  }
+  article:nth-of-type(2) {
+    border-bottom-color: #14b8a6;
+  }
+  article:nth-of-type(3) {
+    border-bottom-color: #a855f7;
+  }
+
+  /* Peoples comments section */
+
+  
+
+
+  .container {
+    width: 80vw;
+    max-width: 100vw;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    display: block;
+  }
+  .review {
+    width: 50%;
+    background: var(--clr-white);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    margin: auto;
+  }
+  .review:hover {
+    box-shadow: var(--main-color);
+  }
+  .img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+  #person-img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+  }
+  .img-container::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background: var(--black);
+    color: var(--light-color);
+  }
+  .img-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--clr-primary-5);
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+  }
+  #author {
+    margin-bottom: 0.25rem;
+  }
+  #job {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: var(--clr-primary-5);
+    font-size: 0.85rem;
+  }
+  #info {
+    margin-bottom: 0.75rem;
+  }
+  .prev-btn,
+  .next-btn {
+    color: var(--main-color);
+    font-size: 1.25rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  .prev-btn:hover,
+  .next-btn:hover {
+    color: var(--clr-primary-5);
+  }
+  .random-btn {
+    margin-top: 0.5rem;
+    background: var(--clr-primary-10);
+    color: var(--clr-primary-5);
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    border-color: var(--clr-primary-5);
+    cursor: pointer;
+  }
+  .random-btn:hover {
+    background: var(--clr-primary-5);
+    color: var(--clr-primary-1);
+  }
+
+  .title {
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 2.7rem;
+}
+
+.title h2 span {
+    color: var(--main-color);
+}
+  
+

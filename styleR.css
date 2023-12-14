@@ -1,0 +1,485 @@
+
+:root {
+    --main-color: rgb(214, 16, 214);
+    --black: #000;
+    --light-color: grey;
+    --transition: all 0.3s linear;
+}
+
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+::selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #fafafa;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    background: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--main-color);
+    border-radius: 5px;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: var(--main-color);
+    color: #fff;
+    letter-spacing: .1rem;
+}
+
+/* Here is the Header css, thumps up */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem 9%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0rem .1rem .5rem rgba(0, 0, 0, .2);
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+
+}
+
+.header .logo span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+}
+
+.header .icons div {
+    font-size: 2.5rem;
+    background-color: #d4cfcf;
+    cursor: pointer;
+    
+    
+}
+
+.header .icons div:hover {
+    transform: rotate(180deg);
+    color: var(--main-color);
+}
+
+.header .icons a {
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    color: #fff;
+    background: var(--main-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: .8rem 2rem;
+    border: none;
+
+}
+
+.header .icons a:hover {
+    color: var(--main-color);
+    background: #fff;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header.active {
+    padding: 2rem 9%;
+    background: rgba(0, 0, 0, .9);
+}
+
+/* End of Crazy Header */
+
+/* body {
+    height: 200rem;
+} */
+
+.home {
+    padding: 0%;
+}
+
+.home .home-slider .box {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-size: cover !important;
+    background-position: center !important;
+    justify-content: center;
+    
+}
+
+.home .home-slider .box .content {
+    text-align: center;
+    max-width: 70rem;
+}
+
+.home .home-slider .box .content h3 {
+    font-size: 5rem;
+    color: #fff;
+    text-transform: uppercase;
+    /* transition-delay: .2s; */
+}
+
+.home .home-slider .box .content p {
+    font-size: 1.7rem;
+    color: #eee;
+    padding: 1rem 0;
+    line-height: 2.5rem;
+    /* transition-delay: .4s */
+}
+
+.home .home-slider .box .button .btn-1 {
+    background: var(--main-color);
+    color: #fff;
+    margin-right: .5rem;
+}
+.home .home-slider .box .button .btn-1 .none {
+    display: none;
+}
+
+
+.home .home-slider .box .button .btn-1:hover {
+    background: #fff;
+    color: var(--main-color);
+}
+/* 
+.home .home-slider .box .button {
+    transition-delay: .6s;
+
+}
+
+.home .home-slider .box .content > *{
+    transform: translateY(2rem);
+    opacity: 0;
+}
+
+.home .home-slider .box .content > * {
+    transform: translateY(0);
+    opacity: 1;
+} */
+
+
+/* HERE COMES THE CSS FOR THE SERVICES SECTION */
+
+.services {
+    padding: 5rem 0;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 2.7rem;
+}
+
+.title h2 span {
+    color: var(--main-color);
+}
+
+    
+
+
+.underline {
+    width: 9rem;
+    height: 0.25rem;
+    background: var(--main-color);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.btn-container {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.filter-btn {
+    background: transparent;
+    border-color: var(--black);
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 2rem 0.5rem;
+    letter-spacing: 1px;
+    border-radius: var(--main-color);
+    padding: 0.375rem 0.75rem;
+    color: var(--black);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .filter-btn:hover {
+    background: var(--main-color);
+    color: var(--light-color);
+    
+  }
+
+  .section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 3rem 2rem;
+    justify-items: center;
+    grid-template-columns: auto auto;
+  }
+
+  .service-item {
+    display: grid;
+    gap: 1rem 2rem;
+    max-width: 55rem;
+    grid-template-columns: auto auto;
+  }
+  .photo {
+    object-fit:cover;
+    height: 250px;
+    width: 200px;
+    border: 0.25rem solid var(--light-color);
+    border-radius:var(--black);
+  }
+
+
+
+  .service-info header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px dotted var(--black);
+  }
+
+  .service-info h4 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+  }
+
+  .service-info p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .price {
+    color: var(--main-color);
+  }
+  .service-text {
+    margin-bottom: 0;
+    padding-top: 1rem;
+  }
+
+  /* Footer section */
+
+  footer {
+    background-color: blanchedalmond;
+    font-size: 2rem;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;    
+  }
+
+    footer a {
+        border: 2px solid var(--black);
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+
+    footer a:hover {
+        background-color: var(--main-color);
+    }
+  /* +++++++++++++++++++++ */
+
+  /* HERE COMES THE START OF REVIEW PAGE CSS */
+
+  /* ++++++++++++++++++++++++ */
+
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+/* SUPER SUPER MEDIA QUERIES */
+
+
+@media screen and (min-width: 1200px) {
+    .section-center {
+      width: 95vw;
+      /* grid-template-columns: 1fr 1fr; */
+    }
+    .photo {
+      height: 150px;
+    }
+  }
+
+@media (max-width: 991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    .header .active {
+        padding: 2rem;
+    }
+
+    .section-center {
+        width: 100vw;
+        grid-template-columns: auto;
+        gap: 2.2rem 0;
+      }
+}
+
+
+/*for 768px */
+@media (max-width: 768px) { 
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar  {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.9);
+        border-top: 1rem solid #eee;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        
+        
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+        
+    }
+
+    /* Service section */
+
+    .section-center {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+         }
+      .photo {
+        height: 175px;
+      }
+    
+}
+
+/* for 450px */
+
+@media (max-width: 450px) {
+    .header .icons a {
+        letter-spacing: none;
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+
+    .section-center {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+         }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

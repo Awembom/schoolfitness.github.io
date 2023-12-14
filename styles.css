@@ -1,0 +1,110 @@
+
+
+:root {
+    --main-color: rgb(214, 16, 214);
+    --black: #000;
+    --light-color: grey;
+    --transition: all 0.3s linear;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    border-bottom: 2px solid gold;
+    padding: 1rem;
+}
+nav li{
+    display: inline;
+    margin-right: 1rem;
+}
+main{
+    padding: 3rem;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid gold;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+.row1 p{
+    width:50%;
+    display: flex;
+}
+.col-3{
+    text-align: center;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+.col-1{
+    padding-right: 5px;
+
+}
+
+.col-1 a {
+    text-decoration: none;
+    color: rgb(187, 179, 179);
+}
+
+.col-1 a:hover {
+    color: var(--main-color);
+}
+.Social-icons{
+    align-items: center;
+}
+
+.Trainers .container {
+    text-transform: uppercase;
+    text-align: center;
+}   
+
+.container1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.Trainers img {
+    max-width: 300px;
+    height: auto;
+}
+
+footer {
+    background-color: var(--light-color);
+    font-size: 2rem;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;    
+  }
+
+    footer a {
+        border: 2px solid var(--black);
+        padding: 0.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        background-color: var(--main-color);
+    }
+
+@media only screen and (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+    }
+}

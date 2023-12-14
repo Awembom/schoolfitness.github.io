@@ -1,0 +1,92 @@
+:root {
+  --main-color: rgb(214, 16, 214);
+  --black: #000;
+  --light-color: grey;
+  --transition: all 0.3s linear;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: var(--main-color);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    background-color: #f1f1f1;
+    width: 200px;
+    padding: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .sidebar li.active {
+    background-color: #ddd;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .graph {
+    height: 300px;
+    max-width: 95vw;
+    background-color: #f1f1f1;
+    /* Additional styling for the graph visualization goes here */
+  }
+
+
+
+.container a {
+  text-decoration: none;
+  color: var(black);
+}
+
+.container a:hover {
+  color: var(--main-color);
+}
+
+  @media (max-width: 768px) { 
+    .container {
+      display: flex;
+      flex-direction: column;
+    } 
+  }
+
+  @media (max-width: 700px) { 
+    .container {
+      display: flex;
+      flex-direction: column;
+    } 
+  }
